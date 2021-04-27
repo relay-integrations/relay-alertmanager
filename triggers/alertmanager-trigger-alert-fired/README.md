@@ -57,7 +57,7 @@ steps:
 
 ## Example Payload
 
-```json
+```
 {
   "version": "4",
   "groupKey": <string>,              // key identifying the group of alerts (e.g. to deduplicate)
