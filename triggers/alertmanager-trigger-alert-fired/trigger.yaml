@@ -21,3 +21,16 @@ build:
 
 publish:
   repository: relaysh/alertmanager-trigger-alert-fired
+
+examples:
+- summary: When a Prometheus Alertmanager alert fires
+  content:
+    apiVersion: v1
+    kind: Trigger
+    name: alertmanager-alert
+    source:
+      type: webhook
+      image: relaysh/alertmanager-trigger-alert-fired
+    binding:
+      parameters:
+        event_payload: !Data event_payload
