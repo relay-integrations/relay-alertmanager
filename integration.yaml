@@ -1,0 +1,23 @@
+apiVersion: integration/v1
+kind: Integration
+name: alertmanager
+channel: alpha
+version: v20200515
+summary: Prometheus Alertmanager
+license: Apache-2.0
+homepage: https://github.com/relay-integrations/relay-alertmanager
+source: https://github.com/relay-integrations/relay-alertmanager
+
+description: |
+  Prometheus Alertmanager handles alerts sent by client applications such as the Prometheus server. It takes care of deduplicating, grouping, and routing these alerts. 
+
+owner:
+  name: Puppet, Inc.
+  email: relay@puppet.com
+  url: https://puppet.com
+
+tags:
+  - source control
+  - git
+  - alertmanager
+  - relay integration

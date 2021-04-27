@@ -1,0 +1,23 @@
+apiVersion: integration/v1
+kind: Trigger
+name: alertmanager-trigger-alert-fired
+version: 1
+summary: Alertmanager alert fired
+
+description: |
+  This trigger takes in the contents of an Alertmanager alert and presents it as an output event.
+
+responders:
+- webhook
+
+schemas:
+  event:
+    source: file
+    file: event.schema.json
+
+build:
+  apiVersion: build/v1
+  kind: Docker
+
+publish:
+  repository: relaysh/alertmanager-trigger-alert-fired
