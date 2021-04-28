@@ -27,6 +27,13 @@ url: <relay url you copied above>
 # 0, all alerts are included.
 [ max_alerts: <int> | default = 0 ]
 ```
+Here's an example configuration of `receiver` in the Alertmanager configuration:
+```
+receivers:
+  - name: relay
+    webhook_configs:
+      - url: https://nr3v5914dd1nlfh1kvrj7i4bdc.relay-webhook.net
+```
 
 For more details about setting up webhooks, check out the [documentation](https://prometheus.io/docs/alerting/latest/configuration/).
 
