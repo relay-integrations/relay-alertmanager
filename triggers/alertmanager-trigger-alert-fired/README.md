@@ -27,8 +27,7 @@ url: <relay url you copied above>
 # 0, all alerts are included.
 [ max_alerts: <int> | default = 0 ]
 ```
-4. Edit your route to ensure proper routing to Relay.
-
+NOTE: Edit your route to ensure proper routing to Relay.
 
 Here's an example configuration of `receivers` in the Alertmanager configuration:
 ```
