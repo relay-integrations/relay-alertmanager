@@ -27,7 +27,7 @@ url: <relay url you copied above>
 # 0, all alerts are included.
 [ max_alerts: <int> | default = 0 ]
 ```
-Here's an example configuration of `receiver` in the Alertmanager configuration:
+Here's an example configuration of `receivers` in the Alertmanager configuration:
 ```
 receivers:
   - name: relay
