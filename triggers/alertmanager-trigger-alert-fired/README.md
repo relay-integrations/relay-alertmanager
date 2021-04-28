@@ -11,7 +11,7 @@ For more details about alerts, check out the [documentation](https://prometheus.
 
 1. Copy the **URL** from the Relay trigger
 2. Open your configuration file for Alertmanager
-2. Edit your `<webhook_config>` with the following configuration:
+3. Edit your `<webhook_config>` with the following configuration:
 ```yaml
 # Whether or not to notify about resolved alerts.
 [ send_resolved: <boolean> | default = true ]
@@ -27,6 +27,9 @@ url: <relay url you copied above>
 # 0, all alerts are included.
 [ max_alerts: <int> | default = 0 ]
 ```
+4. Edit your route to ensure proper routing to Relay.
+
+
 Here's an example configuration of `receivers` in the Alertmanager configuration:
 ```
 receivers:
